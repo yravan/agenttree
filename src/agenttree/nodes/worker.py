@@ -104,14 +104,24 @@ async def execute_leaf(
                 "observation": str(observation),
             })
         else:
-            # No tool call — LLM just provided text
+            # No tool call — LLM just provided text.
+            # Treat substantial text content as a completed result (common in mock mode
+            # or when the model doesn't support tool calling).
+            content = response["content"]
             node.browser_history.append({
                 "step": step,
-                "thought": response["content"],
+                "thought": content,
                 "action": "none",
                 "params": {},
                 "observation": "No action taken",
             })
+            # If we get text without tool calls after step 1, treat it as the result
+            if step >= 2 and content and len(content) > 50:
+                return ExecutionResult(
+                    data=content,
+                    success=True,
+                    steps_taken=step,
+                )
 
         # Rate limiting
         await asyncio.sleep(settings.timing.action_delay_seconds)
