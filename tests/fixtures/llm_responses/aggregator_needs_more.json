@@ -1,0 +1,8 @@
+{
+  "content": "{\"final_result\": {\"products\": [{\"name\": \"Sony WH-1000XM5\", \"price\": \"$298.00\", \"rating\": 4.7, \"reviews\": 15234, \"sources\": [\"Google\"]}]}, \"confidence\": 0.45, \"completeness\": 0.35, \"gaps\": [\"Amazon search failed due to CAPTCHA - missing Amazon pricing and ratings\", \"Best Buy returned empty results - may need alternative search terms\"], \"needs_more_work\": true, \"additional_subtasks\": [\"Navigate directly to https://www.amazon.com/s?k=noise+cancelling+headphones and extract top 5 products with prices and ratings\", \"Search Best Buy for 'wireless noise cancelling headphones' instead and extract top 5 products with prices and ratings\"]}",
+  "tool_calls": [],
+  "input_tokens": 1600,
+  "output_tokens": 195,
+  "cost": 0.003,
+  "model": "test-model"
+}

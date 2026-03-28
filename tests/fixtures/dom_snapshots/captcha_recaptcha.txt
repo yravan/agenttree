@@ -1,0 +1,11 @@
+[URL] https://www.google.com/sorry/index
+[TITLE] Before you continue
+
+[text] Our systems have detected unusual traffic from your computer network.
+[text] This page checks to see if it's really you sending the requests, and not a robot.
+[e1] <div class="g-recaptcha" data-sitekey="6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-"></div>
+[e2] <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-" title="reCAPTCHA" role="presentation"></iframe>
+[text] Why did this happen?
+[text] This page appears when Google automatically detects requests coming from your computer network which appear to be in violation of the Terms of Service.
+[e3] <a href="https://support.google.com/websearch/answer/86640">Learn more</a>
+[e4] <input type="submit" value="Submit">

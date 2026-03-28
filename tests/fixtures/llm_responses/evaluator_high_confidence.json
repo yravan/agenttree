@@ -1,0 +1,8 @@
+{
+  "content": "{\"score\": 0.92, \"reasoning\": \"The result fully addresses the task: all 5 requested products are present with complete price, rating, and review data. URLs are included and the data appears current. Minor deduction for not including shipping information.\"}",
+  "tool_calls": [],
+  "input_tokens": 950,
+  "output_tokens": 65,
+  "cost": 0.0015,
+  "model": "test-model"
+}

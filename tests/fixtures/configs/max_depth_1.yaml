@@ -1,0 +1,51 @@
+tree:
+  max_depth: 1
+  max_breadth: 5
+  max_total_nodes: 50
+  allow_respawn: true
+
+redundancy:
+  redundancy_n: 3
+  adaptive: true
+  high_confidence_threshold: 0.85
+  medium_confidence_threshold: 0.5
+  voter_model: null
+
+resources:
+  max_parallel_tabs: 5
+  max_concurrent_llm_calls: 4
+
+llm:
+  model: "test-model"
+  temperature: 0.3
+  max_tokens: 2048
+  api_key_env: LLM_API_KEY
+  base_url_env: LLM_BASE_URL
+  planner_model: null
+  executor_model: null
+  aggregator_model: null
+
+costs:
+  budget_usd: 5.00
+  warn_at_usd: 3.50
+
+timing:
+  max_steps_per_leaf: 15
+  timeout_per_node_seconds: 60
+  timeout_total_seconds: 300
+  action_delay_seconds: 0.0
+
+dom:
+  max_tokens: 8000
+
+store:
+  path: ./test_runs
+
+extension:
+  websocket_port: 9224
+
+logging:
+  level: DEBUG
+  save_conversations: false
+  save_dom_snapshots: false
+  dashboard: false

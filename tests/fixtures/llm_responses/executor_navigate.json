@@ -1,0 +1,15 @@
+{
+  "content": "I need to navigate to the search page first to find the requested products.",
+  "tool_calls": [
+    {
+      "name": "navigate",
+      "arguments": {
+        "url": "https://www.google.com/search?q=best+noise+cancelling+headphones+2025"
+      }
+    }
+  ],
+  "input_tokens": 520,
+  "output_tokens": 45,
+  "cost": 0.001,
+  "model": "test-model"
+}

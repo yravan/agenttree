@@ -1,0 +1,16 @@
+{
+  "content": "I have extracted all the requested product data from this page. Returning the structured results.",
+  "tool_calls": [
+    {
+      "name": "done",
+      "arguments": {
+        "result": "{\"products\": [{\"name\": \"Sony WH-1000XM5\", \"price\": \"$298.00\", \"rating\": 4.7, \"reviews\": 15234, \"url\": \"https://www.example.com/sony-xm5\"}, {\"name\": \"Bose QuietComfort Ultra\", \"price\": \"$329.00\", \"rating\": 4.6, \"reviews\": 8921, \"url\": \"https://www.example.com/bose-qc-ultra\"}, {\"name\": \"Apple AirPods Max\", \"price\": \"$449.00\", \"rating\": 4.5, \"reviews\": 12087, \"url\": \"https://www.example.com/airpods-max\"}]}",
+        "success": true
+      }
+    }
+  ],
+  "input_tokens": 2100,
+  "output_tokens": 180,
+  "cost": 0.003,
+  "model": "test-model"
+}

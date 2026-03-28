@@ -1,0 +1,8 @@
+{
+  "content": "{\"score\": 0.25, \"reasoning\": \"The result is largely incomplete: only 1 of the 5 requested products was found. The single product entry is missing its review count. The page appeared to be soft-blocked, returning minimal data. A different approach or source is needed.\"}",
+  "tool_calls": [],
+  "input_tokens": 880,
+  "output_tokens": 70,
+  "cost": 0.0012,
+  "model": "test-model"
+}

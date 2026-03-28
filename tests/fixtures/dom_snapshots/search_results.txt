@@ -1,0 +1,45 @@
+[URL] https://www.google.com/search?q=best+noise+cancelling+headphones+2025
+[TITLE] best noise cancelling headphones 2025 - Google Search
+
+[e1] <input type="text" value="best noise cancelling headphones 2025" name="q">
+[e2] <button aria-label="Search">Search</button>
+[e3] <a href="/images">Images</a>
+[e4] <a href="/shopping">Shopping</a>
+[e5] <a href="/news">News</a>
+[text] About 245,000,000 results (0.52 seconds)
+[text] --- Result 1 ---
+[e6] <a href="https://www.techradar.com/best/best-noise-cancelling-headphones">Best noise-cancelling headphones 2025: top ANC headphones ranked</a>
+[text] TechRadar - Jan 15, 2025
+[text] Our top picks for the best noise-cancelling headphones you can buy right now, including over-ear and on-ear options from Sony, Bose, and Apple.
+[text] --- Result 2 ---
+[e7] <a href="https://www.rtings.com/headphones/reviews/best/noise-cancelling">The 7 Best Noise Cancelling Headphones - Spring 2025</a>
+[text] RTINGS.com - Updated Mar 2025
+[text] After testing over 400 headphones, these are the best noise cancelling headphones we have found. The Sony WH-1000XM5 are the best overall.
+[text] --- Result 3 ---
+[e8] <a href="https://www.cnet.com/tech/best-noise-canceling-headphones/">Best Noise-Canceling Headphones for 2025 - CNET</a>
+[text] CNET - Feb 28, 2025
+[text] From Sony to Bose to Apple, these are the best noise-canceling headphones based on our expert testing and reviews.
+[text] --- Result 4 ---
+[e9] <a href="https://www.soundguys.com/best-noise-cancelling-headphones-2506/">Best noise-cancelling headphones (2025) - SoundGuys</a>
+[text] SoundGuys - Mar 10, 2025
+[text] We test hundreds of headphones every year. Here are our picks for the best noise-cancelling headphones of 2025.
+[text] --- Result 5 ---
+[e10] <a href="https://www.whathifi.com/best-buys/best-noise-cancelling-headphones">Best noise-cancelling headphones 2025 - What Hi-Fi?</a>
+[text] What Hi-Fi? - Mar 2025
+[text] Our expert reviewers have tested the best noise-cancelling headphones from Sony, Bose, Sennheiser and more.
+[text] --- Result 6 ---
+[e11] <a href="https://www.nytimes.com/wirecutter/reviews/best-noise-cancelling-headphones/">Best Noise-Cancelling Headphones 2025 - Wirecutter</a>
+[text] Wirecutter by NYT - Feb 2025
+[text] After spending hundreds of hours testing, we think the Sony WH-1000XM5 is the best noise-cancelling headphone for most people.
+[text] --- Result 7 ---
+[e12] <a href="https://www.headphonesty.com/best-noise-cancelling-headphones/">12 Best Noise Cancelling Headphones in 2025</a>
+[text] Headphonesty - Mar 15, 2025
+[text] Looking for the best noise-cancelling headphones? Check out our top picks based on extensive testing and real-world use.
+[text] --- Result 8 ---
+[e13] <a href="https://www.amazon.com/s?k=noise+cancelling+headphones">noise cancelling headphones - Amazon.com</a>
+[text] Amazon.com
+[text] Shop noise cancelling headphones. Free shipping on eligible orders. Read reviews and compare products.
+[e14] <a href="/search?q=best+noise+cancelling+headphones+2025&start=10">Next ></a>
+[text] Page 1 of many
+[e15] <a href="/search?q=best+noise+cancelling+headphones+2025&start=10">2</a>
+[e16] <a href="/search?q=best+noise+cancelling+headphones+2025&start=20">3</a>

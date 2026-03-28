@@ -1,0 +1,8 @@
+{
+  "content": "{\"final_result\": {\"products\": [{\"name\": \"Sony WH-1000XM5\", \"price\": \"$298.00\", \"rating\": 4.7, \"reviews\": 15234, \"sources\": [\"Google\", \"Amazon\", \"Best Buy\"]}, {\"name\": \"Bose QuietComfort Ultra\", \"price\": \"$329.00\", \"rating\": 4.6, \"reviews\": 8921, \"sources\": [\"Google\", \"Amazon\"]}, {\"name\": \"Apple AirPods Max\", \"price\": \"$449.00\", \"rating\": 4.5, \"reviews\": 12087, \"sources\": [\"Google\", \"Best Buy\"]}, {\"name\": \"Sennheiser Momentum 4\", \"price\": \"$279.95\", \"rating\": 4.4, \"reviews\": 3420, \"sources\": [\"Amazon\", \"Best Buy\"]}, {\"name\": \"Sony WH-1000XM4\", \"price\": \"$228.00\", \"rating\": 4.7, \"reviews\": 42156, \"sources\": [\"Amazon\"]}]}, \"confidence\": 0.92, \"completeness\": 0.95, \"gaps\": [], \"needs_more_work\": false, \"additional_subtasks\": []}",
+  "tool_calls": [],
+  "input_tokens": 1800,
+  "output_tokens": 280,
+  "cost": 0.004,
+  "model": "test-model"
+}

@@ -1,0 +1,8 @@
+{
+  "content": "{\"action\": \"execute\", \"reasoning\": \"This is a simple single-page task: navigate to one URL and extract specific data fields. Can be completed in under 10 browser actions.\", \"subtasks\": []}",
+  "tool_calls": [],
+  "input_tokens": 290,
+  "output_tokens": 55,
+  "cost": 0.0007,
+  "model": "test-model"
+}

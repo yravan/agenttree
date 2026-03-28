@@ -23,8 +23,30 @@ dependencies = [
     "python-dotenv>=1.2.2",
 ]
 
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "pytest-timeout>=2.2",
+    "pytest-cov>=5.0",
+    "respx>=0.21",
+    "freezegun>=1.3",
+]
+
 [project.scripts]
 agenttree = "agenttree.cli:main"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+timeout = 30
+markers = [
+    "unit: Pure logic, no I/O",
+    "integration: Uses real SQLite, filesystem, or local WebSocket",
+    "e2e: Full pipeline tests (may be slow)",
+    "slow: Tests that take >10 seconds",
+    "browser: Requires Chrome extension running",
+]
+filterwarnings = ["ignore::DeprecationWarning"]
 
 [build-system]
 requires = ["uv_build>=0.9.5,<0.10.0"]

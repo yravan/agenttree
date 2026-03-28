@@ -1,0 +1,23 @@
+[URL] https://www.example.com/products/headphones
+[TITLE] Premium Headphones - Example Store
+
+[e1] <a href="/">Home</a>
+[e2] <a href="/products">Products</a>
+[e3] <a href="/cart">Cart (0)</a>
+[text] Premium Headphones
+[text] Find the perfect pair of headphones for your needs.
+[e4] <input type="text" placeholder="Search products..." name="search">
+[e5] <button type="submit">Search</button>
+[text] Featured Products
+[e6] <a href="/products/sony-xm5">Sony WH-1000XM5 - $298.00 ★★★★★ (15,234 reviews)</a>
+[e7] <a href="/products/bose-qc-ultra">Bose QuietComfort Ultra - $329.00 ★★★★½ (8,921 reviews)</a>
+[e8] <a href="/products/airpods-max">Apple AirPods Max - $449.00 ★★★★½ (12,087 reviews)</a>
+[e9] <select name="sort">
+  <option value="relevance">Sort by: Relevance</option>
+  <option value="price-low">Price: Low to High</option>
+  <option value="price-high">Price: High to Low</option>
+  <option value="rating">Avg. Customer Rating</option>
+</select>
+[e10] <button>Load More</button>
+[e11] <a href="/about">About Us</a>
+[e12] <a href="/contact">Contact</a>

@@ -1,0 +1,16 @@
+[URL] https://www.example.com/search?q=xyzzynonexistent12345
+[TITLE] Search Results - Example Store
+
+[e1] <a href="/">Home</a>
+[e2] <a href="/products">Products</a>
+[e3] <input type="text" value="xyzzynonexistent12345" name="q">
+[e4] <button type="submit">Search</button>
+[text] Search Results for "xyzzynonexistent12345"
+[text] No results found
+[text] We couldn't find any products matching your search. Try:
+[text] - Checking your spelling
+[text] - Using more general terms
+[text] - Browsing our categories below
+[e5] <a href="/products/headphones">Headphones</a>
+[e6] <a href="/products/speakers">Speakers</a>
+[e7] <a href="/products/earbuds">Earbuds</a>

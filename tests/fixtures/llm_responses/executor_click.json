@@ -1,0 +1,15 @@
+{
+  "content": "I can see the search results. Let me click on the first relevant link to get detailed product information.",
+  "tool_calls": [
+    {
+      "name": "click",
+      "arguments": {
+        "ref": "e14"
+      }
+    }
+  ],
+  "input_tokens": 1850,
+  "output_tokens": 38,
+  "cost": 0.0015,
+  "model": "test-model"
+}

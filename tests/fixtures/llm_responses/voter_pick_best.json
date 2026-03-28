@@ -1,0 +1,8 @@
+{
+  "content": "{\"best_index\": 0, \"confidence\": 0.88, \"reasoning\": \"Result 0 is the most complete: it includes all 5 requested products with accurate prices, ratings, and review counts. Result 1 is missing two products and has outdated pricing. Result 2 has all products but is missing review counts for two entries.\"}",
+  "tool_calls": [],
+  "input_tokens": 2200,
+  "output_tokens": 85,
+  "cost": 0.002,
+  "model": "test-model"
+}
