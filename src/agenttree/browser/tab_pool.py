@@ -18,11 +18,11 @@ class TabPool:
         self.bridge = bridge
         self.max_tabs = max_tabs
         self._semaphore = asyncio.Semaphore(max_tabs)
-        self._available: asyncio.Queue[str] = asyncio.Queue()
-        self._all_tabs: set[str] = set()
-        self._in_use: set[str] = set()
+        self._available: asyncio.Queue[str | int] = asyncio.Queue()
+        self._all_tabs: set[str | int] = set()
+        self._in_use: set[str | int] = set()
 
-    async def acquire(self) -> str:
+    async def acquire(self) -> str | int:
         """Acquire a tab from the pool, creating one if needed."""
         await self._semaphore.acquire()
 
@@ -42,8 +42,16 @@ class TabPool:
         logger.debug("tab_created", tab_id=tab_id, total=len(self._all_tabs), in_use=len(self._in_use))
         return tab_id
 
-    async def release(self, tab_id: str) -> None:
-        """Release a tab back to the pool."""
+    async def release(self, tab_id: str | int) -> None:
+        """Release a tab back to the pool.
+
+        Navigates the tab to about:blank before returning it so the next
+        consumer starts with a clean slate.
+        """
+        try:
+            await self.bridge.navigate(tab_id, "about:blank")
+        except Exception:
+            logger.debug("tab_blank_navigate_failed", tab_id=tab_id)
         self._in_use.discard(tab_id)
         await self._available.put(tab_id)
         self._semaphore.release()

@@ -57,7 +57,7 @@ async def run(task: str, settings: Settings, resume_run: str | None = None) -> N
     if use_mock:
         bridge = MockBrowserBridge(llm_client=llm)
     else:
-        bridge = BrowserBridge(port=settings.extension.websocket_port)
+        bridge = BrowserBridge(base_url=settings.mcp.base_url)
 
     tab_pool = TabPool(bridge, max_tabs=settings.resources.max_parallel_tabs)
 

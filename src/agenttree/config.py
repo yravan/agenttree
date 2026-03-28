@@ -82,8 +82,9 @@ class StoreConfig(BaseModel):
     path: str = "./runs"
 
 
-class ExtensionConfig(BaseModel):
-    websocket_port: int = 9223
+class MCPConfig(BaseModel):
+    base_url: str = "http://127.0.0.1:12306/mcp"
+    timeout: int = 30
 
 
 class LoggingConfig(BaseModel):
@@ -109,7 +110,7 @@ class Settings(BaseSettings):
     timing: TimingConfig = Field(default_factory=TimingConfig)
     dom: DomConfig = Field(default_factory=DomConfig)
     store: StoreConfig = Field(default_factory=StoreConfig)
-    extension: ExtensionConfig = Field(default_factory=ExtensionConfig)
+    mcp: MCPConfig = Field(default_factory=MCPConfig)
     logging: LoggingConfig = Field(default_factory=LoggingConfig)
 
     @classmethod

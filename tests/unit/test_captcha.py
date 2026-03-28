@@ -1,42 +1,47 @@
-"""Unit tests for CAPTCHA detection and resolution."""
+"""Unit tests for CAPTCHA detection (poll-based, mcp-chrome)."""
 
 from __future__ import annotations
 
-import asyncio
-
 import pytest
 
-from agenttree.browser.captcha import _captcha_events, resolve_captcha
+from agenttree.browser.captcha import CaptchaHandler, CAPTCHA_DETECTION_JS, resolve_captcha
 
 
-class MockLLMClient:
-    def __init__(self, responses=None):
-        self.responses = responses or []
-        self.calls = []
-        self._idx = 0
+class FakeBridge:
+    """Minimal mock bridge for CAPTCHA testing."""
 
-    async def call(self, messages, *, node_id="", role="", model=None,
-                   temperature=None, max_tokens=None, tools=None, response_format=None):
-        self.calls.append({"messages": messages, "role": role, "node_id": node_id, "tools": tools})
-        if self._idx < len(self.responses):
-            resp = self.responses[self._idx]
-            self._idx += 1
-            return resp
-        return {"content": "{}", "tool_calls": [], "input_tokens": 10, "output_tokens": 10, "cost": 0.001, "model": "test"}
+    def __init__(self, script_result=None):
+        self._script_result = script_result
+
+    async def execute_script(self, tab_id, script):
+        return self._script_result
+
+
+@pytest.mark.unit
+def test_captcha_detection_js_is_nonempty():
+    assert len(CAPTCHA_DETECTION_JS) > 100
 
 
 @pytest.mark.unit
 @pytest.mark.asyncio
-async def test_resolve_captcha_sets_event():
-    """resolve_captcha() should set the event and remove it from the registry."""
-    tab_id = "test_tab_42"
-    event = asyncio.Event()
-    _captcha_events[tab_id] = event
+async def test_check_captcha_returns_none_when_clean():
+    bridge = FakeBridge(script_result=None)
+    handler = CaptchaHandler(bridge)
+    result = await handler.check_captcha("tab1")
+    assert result is None
 
-    assert not event.is_set()
-    assert tab_id in _captcha_events
 
-    resolve_captcha(tab_id)
+@pytest.mark.unit
+@pytest.mark.asyncio
+async def test_check_captcha_returns_dict_when_detected():
+    bridge = FakeBridge(script_result={"detected": True, "patterns": ["selector:.g-recaptcha"]})
+    handler = CaptchaHandler(bridge)
+    result = await handler.check_captcha("tab1")
+    assert result is not None
+    assert result["detected"] is True
+    assert "selector:.g-recaptcha" in result["patterns"]
 
-    assert event.is_set()
-    assert tab_id not in _captcha_events
+
+@pytest.mark.unit
+def test_resolve_captcha_does_not_raise():
+    resolve_captcha("tab_99")
