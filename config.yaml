@@ -1,0 +1,51 @@
+tree:
+  max_depth: 5
+  max_breadth: 10
+  max_total_nodes: 500
+  allow_respawn: true
+
+redundancy:
+  redundancy_n: 3
+  adaptive: true
+  high_confidence_threshold: 0.85
+  medium_confidence_threshold: 0.5
+  voter_model: null
+
+resources:
+  max_parallel_tabs: 15
+  max_concurrent_llm_calls: 10
+
+llm:
+  model: "meta-llama/llama-3.3-70b-instruct"
+  temperature: 0.3
+  max_tokens: 4096
+  api_key_env: LLM_API_KEY
+  base_url_env: LLM_BASE_URL
+  planner_model: null
+  executor_model: null
+  aggregator_model: null
+
+costs:
+  budget_usd: 10.00
+  warn_at_usd: 7.50
+
+timing:
+  max_steps_per_leaf: 30
+  timeout_per_node_seconds: 300
+  timeout_total_seconds: 7200
+  action_delay_seconds: 1.0
+
+dom:
+  max_tokens: 16000
+
+store:
+  path: ./runs
+
+extension:
+  websocket_port: 9223
+
+logging:
+  level: INFO
+  save_conversations: true
+  save_dom_snapshots: false
+  dashboard: true

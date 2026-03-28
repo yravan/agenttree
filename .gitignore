@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+runs/
+*.egg-info/
+dist/
+build/
+.ruff_cache/
+node_modules/
+extension/chrome-extension/dist/
